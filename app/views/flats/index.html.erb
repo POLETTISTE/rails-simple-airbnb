@@ -3,7 +3,7 @@
   <% @flats.each do |flat| %>
     <li>
       <div class="card-product">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+        <img src="<%= flat.photo %>" />
         <div class="card-product-infos">
           <%= link_to flat.name, flat_path(flat.id) %>
           <br>
