@@ -1,22 +1,18 @@
+<br>
+
 
 <ul id="flats">
+
   <% @flats.each do |flat| %>
+  <%= link_to flat_path(flat), class: "text-decoration-none" do %>
     <li>
       <div class="card-product">
         <img src="<%= flat.photo %>" />
         <div class="card-product-infos">
-          <%= link_to flat.name, flat_path(flat.id) %>
-          <br>
-          <%= flat.address %>
-          <br>
-          <%= flat.description %>
-          <br>
-          <%= flat.price_per_night %> €/night
-          <br>
-          <%= flat.number_of_guests %> guests
-          <hr>
-        </div>
+          <%= flat.name %>
+
       </div>
     </li>
+  <% end  %>
   <% end %>
 </ul>

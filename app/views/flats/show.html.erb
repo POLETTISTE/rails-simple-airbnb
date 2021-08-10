@@ -1,0 +1,21 @@
+<div class="card-product">
+        <img src="<%= @flat.photo %>" />
+        <div class="card-product-infos">
+          <%= @flat.name %>
+          <br>
+          <%= @flat.address %>
+          <br>
+          <%= @flat.description %>
+          <br>
+          <%= @flat.price_per_night %> €/night
+          <br>
+          <%= @flat.number_of_guests %> guests
+        </div>
+      </div>
+    </li>
+<%= link_to "Accueil", flats_path %>
+<%= link_to "Edit this flat", edit_flat_path %>
+
+ <%= link_to flat_path(@flat.id), method: :delete, data: { confirm: "Are you really sure to delete #{@flat.name} ?? 😱" } do %>
+        <i class="fa fa-trash-o" aria-hidden="false"></i>
+      <% end %>

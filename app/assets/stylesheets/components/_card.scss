@@ -1,17 +1,14 @@
 .card-product {
-  overflow: hidden;
-  height: 120px;
-  width:500px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
+  width:50%;
   margin-bottom: 20px;
+text-align: center;
 }
 
-.card-product img {
-  height: 100%;
-  width: 120px;
+.card-product > img {
+  height: 200px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -23,13 +20,27 @@
 
 .card-product p {
   font-size: 12px;
-  line-height: 1.4;
   opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
+  margin: 0;
 }
+
 
 .card-product .card-product-infos {
   padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
 }
 
+.card-product-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+#flats {
+  list-style-type: none;
+}

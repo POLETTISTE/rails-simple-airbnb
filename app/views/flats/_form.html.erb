@@ -1,0 +1,15 @@
+<hr>
+<%= simple_form_for [@flat] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :description %>
+  <%= f.input :price_per_night %>
+  <%= f.input :number_of_guests %>
+  <%= f.input :photo %>
+
+
+
+ <div class="btn"> <%= f.submit "Submit creation", class: "btn btn-primary" %> </div>
+
+<% end %>
+
