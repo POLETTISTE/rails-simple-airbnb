@@ -17,5 +17,5 @@
 <%= link_to "Edit this flat", edit_flat_path %>
 
  <%= link_to flat_path(@flat.id), method: :delete, data: { confirm: "Are you really sure to delete #{@flat.name} ?? 😱" } do %>
-        <i class="fa fa-trash-o" aria-hidden="false"></i>
+        <i class="far fa-trash-alt"></i>
       <% end %>
